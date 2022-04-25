@@ -10,7 +10,7 @@ function normalcdf(mean, sigma, to) {
   var erf =
     1 - ((((a5 * t + a4) * t + a3) * t + a2) * t + a1) * t * Math.exp(-z * z);
   var sign = 1;
-  if (z < 0) {
+  if (z < 0) { 
     sign = -1;
   }
   return (1 / 2) * (1 + sign * erf);
